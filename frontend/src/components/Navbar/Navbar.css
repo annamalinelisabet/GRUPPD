@@ -1,1 +1,61 @@
 /* SCOPA CSS:N */
+.Navbar {
+    background-color: #687368c3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem 2rem;
+}
+
+.Navbar .logo {
+    width: 150px;
+    margin-right: 1.5rem;
+}
+
+.Navbar .nav-links {
+    width: 200px;
+}
+
+.Navbar .products-link {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    border-left: 3px solid var(--secondary-color);
+    padding: .3rem .5rem;
+    margin-top: .3rem;
+}
+
+.Navbar .user-links {
+    width: 140px;
+}
+
+.Navbar .nav-btn {
+    background-color: transparent;
+    border-radius: 100vh;
+    padding: .3rem .6rem;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Navbar .nav-btn:hover {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.Navbar .nav-btn:active {
+    border: 3px solid white;
+}
+
+.Navbar .fa-cart-shopping {
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width: 550px) {
+
+    .Navbar .products-link {
+        display: none;
+    }
+}

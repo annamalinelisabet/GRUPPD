@@ -1,1 +1,11 @@
 /* SCOPA CSS:N */
+.Home .img-container {
+    width: 100%;
+}
+
+.Home .hero-img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: 80% 90%;
+}

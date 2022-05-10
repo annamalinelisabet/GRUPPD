@@ -31,7 +31,8 @@
 
 .Cart .form-cart{
     padding: 1rem;
-    width: 60%;
+    min-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     border-bottom: 2px solid rgba(87, 87, 87, 0.26);
     display: flex;

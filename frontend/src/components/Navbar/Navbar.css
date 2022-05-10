@@ -32,7 +32,7 @@
 .Navbar .nav-btn {
     background-color: transparent;
     border-radius: 100vh;
-    padding: .3rem .6rem;
+    padding: .4rem 1.2rem;
     color: white;
     border: 3px solid white;
     cursor: pointer;
@@ -51,6 +51,10 @@
 .Navbar .fa-cart-shopping {
     font-size: 1.5rem;
     color: white;
+}
+
+.Navbar .fa-cart-shopping:hover {
+    color: var(--primary-color);
 }
 
 @media (max-width: 550px) {

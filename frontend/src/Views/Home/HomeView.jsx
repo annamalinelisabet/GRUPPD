@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeView.css'
-import hero from '../../assets/dejsa.avif'
+import hero from '../../assets/lampa.png'
 
 const HomeView = () => {
   return (

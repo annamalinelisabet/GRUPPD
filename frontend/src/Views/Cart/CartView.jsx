@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Cart/CartView.css'
 
+
 const CartView = () => {
   return (
     <div className='Cart'>
@@ -9,30 +10,22 @@ const CartView = () => {
             <div className='form-cart'>
               <div className="cart-item">
                 <img className='img-1' src='https://www.ikea.com/se/sv/images/products/taernaby-bordslampa-beige__1016210_pe830263_s5.jpg?f=l' />
+                  <div className="text-group">
+                      <h1>Tärnaby</h1>
+                      <p>299 :-</p>
+                  </div>
 
-                    <div className="text-group">
-                      <h1>Växjö</h1>
-                      <small>299 :-</small>
-                    </div>
 
-                    <div className='button-group'>
-                      <button>-</button>
-                      <button>+</button>
-                    </div>
+                  <div class="quantity">
+                    <button className="minus-btn" type="button" name="button"> <small className='minus-icon'>-</small> </button>
+                          <input type="text" name="name" value="1"></input>
+                    <button className="plus-btn" type="button" name="button"> <small className='plus-icon'>+</small> </button>
+                  </div>
               </div>
-              <div className="cart-item">
-                <img className='img-1' src='https://www.ikea.com/se/sv/images/products/taernaby-bordslampa-beige__1016210_pe830263_s5.jpg?f=l' />
+                  <div class="item-price">349 :-</div>
 
-                    <div className="text-group">
-                      <h1>Växjö</h1>
-                      <small>299 :-</small>
-                    </div>
 
-                    <div className='button-group'>
-                      <button>-</button>
-                      <button>+</button>
-                    </div>
-              </div>
+
           </div>
       </div>
     </div>

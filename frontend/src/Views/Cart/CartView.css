@@ -17,10 +17,11 @@
 
 }
 .Cart .header{
+    font-family: 'Playfair Display', serif;
     margin-bottom: 2rem;
     padding-top: 1.5rem;
-    text-decoration: underline 3px #68736842;
-    text-underline-offset: 4px ;
+    text-decoration: underline 2px #68736842;
+    text-underline-offset: 5px ;
     text-transform: uppercase;
     color: #5b685b;
     display: flex;
@@ -29,21 +30,17 @@
 }
 
 .Cart .form-cart{
-    padding: 2rem;
+    padding: 1rem;
     width: 60%;
     margin: 0 auto;
-    border: 2px solid red;
-
-
-}
-.Cart .cart-item{
-    border-bottom: 2px solid gray;    
-    margin-bottom:2rem;
-
-    padding: .5rem;
+    border-bottom: 2px solid rgba(87, 87, 87, 0.26);
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+}
+.Cart .cart-item{
+    display: flex;
+    
 }
 
 .Cart .img-1{
@@ -52,16 +49,15 @@
 
 }
 .Cart .text-group{
-    position: relative;
-    bottom: 25px;
+
 }
 .Cart .text-group h1{
 
     font-size: 15px;
-    padding-right: 0;
+
 
 }
-.Cart .text-group small{
+.Cart .text-group p{
     font-size: 10px;
 }
 
@@ -70,4 +66,52 @@
     top: 45px;
     right: 40px;
 
+}
+
+.Cart .quantity{
+    font-family:'Playfair Display', serif;
+    position: relative;
+    top: 75px;
+    right: 60px ;
+
+}
+.Cart .quantity input { 
+    position: relative;
+    bottom: 3px;
+    border: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.178);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+    text-align: center;
+    width: 30px;
+    font-size: 10px;
+    height: 30px;
+    
+
+
+}
+.Cart button[class*=btn] {
+    
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+.Cart .plus-btn{
+    border: 2px solid rgba(0, 0, 0, 0.178);
+    border-left: none;
+    font-weight:500;
+    font-size: 20px;
+}
+.Cart .minus-btn{
+    border: 2px solid rgba(0, 0, 0, 0.178);
+    border-right: none;
+    font-weight:500;
+    font-size: 20px;
+}
+.Cart .item-price{
+    width: 83px;
+    text-align:end;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 5rem;
 }

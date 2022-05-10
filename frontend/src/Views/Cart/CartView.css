@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Cart html, body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Cart .container {
+    position: absolute;
+    top: 83px;
+    width: 100%;
+
+}
+.Cart .header{
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    text-decoration: underline 3px #68736842;
+    text-underline-offset: 4px ;
+    text-transform: uppercase;
+    color: #5b685b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cart .form-cart{
+    padding: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid red;
+
+
+}
+.Cart .cart-item{
+    border-bottom: 2px solid gray; 
+    border-style: outset 20%;   
+    margin-bottom:2rem;
+
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.Cart .img-1{
+    height: 100px;
+    margin-right: 1rem;
+
+}
+.Cart .text-group{
+    position: relative;
+    bottom: 25px;
+}
+.Cart .text-group h1{
+
+    font-size: 15px;
+    padding-right: 0;
+
+}
+.Cart .text-group small{
+    font-size: 10px;
+}
+
+.Cart .button-group{
+    position: relative;
+    top: 45px;
+    right: 40px;
+
+}

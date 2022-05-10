@@ -37,8 +37,7 @@
 
 }
 .Cart .cart-item{
-    border-bottom: 2px solid gray; 
-    border-style: outset 20%;   
+    border-bottom: 2px solid gray;    
     margin-bottom:2rem;
 
     padding: .5rem;

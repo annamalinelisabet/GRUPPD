@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +12,24 @@
 .Cart html, body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.Cart body{
+    margin-bottom: 20px;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .Cart .container {
     position: absolute;
-    top: 83px;
-    width: 100%;
-
+    top: 80px;
+    margin: 0 auto 0 145px;
 }
+
+
+
 .Cart .header{
     font-family: 'Playfair Display', serif;
     margin-bottom: 2rem;
@@ -32,49 +46,46 @@
 .Cart .form-cart{
     padding: 1rem;
     min-width: 50%;
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
     border-bottom: 2px solid rgba(87, 87, 87, 0.26);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
+
 .Cart .cart-item{
-    display: flex;
+    display: flex; 
     
 }
-
 .Cart .img-1{
-    height: 100px;
+    height: 200px;
     margin-right: 1rem;
-
 }
 .Cart .text-group{
 
 }
 .Cart .text-group h1{
-
-    font-size: 15px;
-
-
+    font-size: 23px;
 }
 .Cart .text-group p{
-    font-size: 10px;
+    font-size: 15px;
 }
-
 .Cart .button-group{
     position: relative;
     top: 45px;
     right: 40px;
-
 }
-
+.Cart .button-group:hover{
+    
+}
 .Cart .quantity{
     font-family:'Playfair Display', serif;
     position: relative;
-    top: 75px;
-    right: 60px ;
-
+    top: 150px;
+    right: 90px ;
 }
 .Cart .quantity input { 
     position: relative;
@@ -86,16 +97,15 @@
     width: 30px;
     font-size: 10px;
     height: 30px;
-    
-
-
 }
 .Cart button[class*=btn] {
-    
-    width: 30px;
+    width: 32px;
     height: 30px;
     background-color: #fff;
     cursor: pointer;
+  }
+  .Cart button[class*=btn]:hover{
+      background-color: #96969610;
   }
 .Cart .plus-btn{
     border: 2px solid rgba(0, 0, 0, 0.178);
@@ -110,9 +120,20 @@
     font-size: 20px;
 }
 .Cart .item-price{
-    width: 83px;
     text-align:end;
     font-size: 19px;
     font-weight: 700;
-    margin-top: 5rem;
+
+}
+.Cart .remove-icon{
+    background: none;
+    color: #687368;
+    border: none;
+    font: inherit;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+
 }

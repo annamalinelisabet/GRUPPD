@@ -46,62 +46,74 @@
 .Cart .form-cart{
     padding: 1rem;
     min-width: 50%;
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 90%;
+    /* margin: 0 auto; */
     border-bottom: 2px solid rgba(87, 87, 87, 0.26);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
 
 .Cart .cart-item{
-    display: flex; 
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
 }
 .Cart .img-1{
     height: 200px;
     margin-right: 1rem;
 }
 .Cart .text-group{
-
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.Cart .header-p{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 .Cart .text-group h1{
     font-size: 23px;
 }
 .Cart .text-group p{
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    
 }
 .Cart .button-group{
     position: relative;
     top: 45px;
     right: 40px;
 }
-.Cart .button-group:hover{
-    
+.Cart .head-quant{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 .Cart .quantity{
-    font-family:'Playfair Display', serif;
-    position: relative;
-    top: 150px;
-    right: 90px ;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: flex-end;
+
 }
 .Cart .quantity input { 
     position: relative;
-    bottom: 3px;
+    
     border: none;
     border-top: 2px solid rgba(0, 0, 0, 0.178);
     border-bottom: 2px solid rgba(0, 0, 0, 0.178);
     text-align: center;
     width: 30px;
     font-size: 10px;
-    height: 30px;
+    height: 32px;
 }
 .Cart button[class*=btn] {
     width: 32px;
-    height: 30px;
-    background-color: #fff;
+    height: 32px;
+    background-color: rgb(244, 245, 244);
     cursor: pointer;
   }
   .Cart button[class*=btn]:hover{
@@ -110,22 +122,27 @@
 .Cart .plus-btn{
     border: 2px solid rgba(0, 0, 0, 0.178);
     border-left: none;
+    border-radius: 0 5px 5px 0;
     font-weight:500;
     font-size: 20px;
 }
 .Cart .minus-btn{
     border: 2px solid rgba(0, 0, 0, 0.178);
     border-right: none;
+    border-radius: 5px 0 0 5px;
     font-weight:500;
     font-size: 20px;
 }
 .Cart .item-price{
-    text-align:end;
     font-size: 19px;
     font-weight: 700;
 
 }
 .Cart .remove-icon{
+    height: 15%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
     background: none;
     color: #687368;
     border: none;
@@ -136,4 +153,10 @@
     cursor: pointer;
     outline: inherit;
 
+}
+.Cart .info-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }

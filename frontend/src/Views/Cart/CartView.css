@@ -27,7 +27,8 @@
 .Cart .container {
     position: absolute;
     top: 80px;
-    width: 100%;
+    left: 100px;
+    width: 80%;
 }
 
 
@@ -191,6 +192,7 @@
 
 .Cart .total-amount{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: end;
     width: 80%;
@@ -206,8 +208,8 @@
 
 .Cart .purchase-parent{
     text-align: center;
-    border-top: 2px solid black;
-    
+    border-top: 2px solid rgba(0, 0, 0, 0.295);
+    border-top-style: groove;
     
 }
 

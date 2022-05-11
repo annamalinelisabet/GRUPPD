@@ -1,1 +1,21 @@
 /* SCOPA CSS:N */
+/* @import '../../App.css'; */
+
+.product-view-container {
+  width: 80%;
+  margin: 10rem auto;
+}
+.product-view-header {
+  font-family: 'Playfair Display', serif;
+}
+.product-view-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #585858;
+  margin-top: .5rem;
+}
+.product-view-cards {
+  margin-top: 5rem;
+  
+}
+
+

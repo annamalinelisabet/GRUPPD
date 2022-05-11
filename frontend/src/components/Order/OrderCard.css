@@ -1,0 +1,58 @@
+.Order {
+    border: 1px solid #85838c;
+    padding: .8rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.Order .item-text {
+    color: #504F54;
+}
+
+.square {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.square input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.Order .checkbox {
+    display: none;
+    margin-right: 1rem;
+}
+
+.Order .admin-box {
+    display: inline-block;
+}
+
+.Order .price {
+    text-align: end;
+    color: #504F54;
+}
+
+.Order .date {
+    font-size: .7rem;
+    color: #504F54;
+}

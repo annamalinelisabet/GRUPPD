@@ -3,6 +3,8 @@ import HomeView from './Home/HomeView'
 import ProductView from './Products/ProductView'
 import LoginView from './Login/LoginView'
 import CartView from './Cart/CartView'
+import UserView from './User/UserView'
+import AdminView from './Admin/AdminView'
 
 const Views = () => {
   return (
@@ -11,6 +13,8 @@ const Views = () => {
         <Route path='/products' element={ <ProductView />}/>
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
+        <Route path='/user' element={ <UserView /> }/>
+        <Route path='/admin' element={ <AdminView /> }/>
     </Routes>
   )
 }

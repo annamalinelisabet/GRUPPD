@@ -1,0 +1,75 @@
+.User {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 9rem 0 4rem 0;
+}
+
+.User .wrapper {
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.User .header {
+    width: 100%;
+}
+
+.User .header-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: #504F54;
+    margin-bottom: 4rem;
+}
+
+.User .btn {
+    cursor: pointer;
+    border-radius: 100vh;
+    padding: .4em 1.2em;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.User .btn-danger {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.User .btn-danger:hover {
+    opacity: 80%;
+}
+
+.User .btn-danger:active {
+    opacity: 100%;
+}
+
+.User .order-text {
+    margin: 2.5rem 0 1rem 0;
+    color: #504F54;
+}
+
+.User .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.User input.hej {
+    display: inline-block;
+}
+
+
+@media (min-width: 550px) {
+    .User .header-text {
+        text-align: center;
+    }
+}

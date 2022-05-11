@@ -1,0 +1,32 @@
+
+.Footer {
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+}
+.Footer .social-links a {
+    color: var(--primary-color);
+    background: #fff;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+     margin-left: 2rem;
+}
+.Footer .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
+}
+.fa-brands{
+    font-size: 2rem;
+    color: var(--clr-primary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: .9rem;
+}
+.Footer .social-links a:hover {
+    background: #ffffffa8;
+}

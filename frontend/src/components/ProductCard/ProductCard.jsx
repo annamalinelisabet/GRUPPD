@@ -1,21 +1,33 @@
-import React from 'react'
-import image from '../../assets/Image-2.png'
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../../store/actions/cartActions'
+import { Link } from 'react-router-dom'
 import './ProductCard.css'
+// import image from '../../assets/Image-2.png'
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
+  
+  const dispatch = useDispatch()
+  
   return (
     <div className='product-card'>
-      <div className="product-card-image-container">
-        <img className='product-card-image' src={image} alt='lampa' />        
-      </div>
+      
+      <Link to={`/products/${product._id}`} className="product-card-link">
+        <div className="product-card-image-container">
+          <img className='product-card-image' src={product.img} alt='lampa' />        
+        </div>
+      </Link>
+
       <div className='product-card-title'>
-        <h4 className='product-card-name'>Växjö</h4>
-        <p className='product-card-price'>299:-</p>
+        <h4 className='product-card-name'>{product.name}</h4>
+        <p className='product-card-price'>{product.price}:-</p>
       </div>
       <div className="product-card-body">
-        <p className='product-card-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sapiente quas ab maiores eos iusto eaque natus eum magnam perspiciatis rem ratione, deleniti a provident consequuntur est eligendi ducimus ut. </p>
+        <p className='product-card-description'>
+          {product.description.slice(0,100)}...          
+        </p>
       </div>
-      <button className='product-card-btn'>Lägg i kundvagn</button>
+      
+      <button onClick={() => dispatch(addToCart(product))} className='product-card-btn'>Lägg i kundvagn</button>
 
     </div>
   )

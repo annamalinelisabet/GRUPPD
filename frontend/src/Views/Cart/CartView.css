@@ -3,7 +3,7 @@
 
 
 
-
+/* Root */
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +22,12 @@
     align-items: center;
 }
 
+/* Root     END */
+
 .Cart .container {
     position: absolute;
     top: 80px;
-    margin: 0 auto 0 145px;
+    width: 100%;
 }
 
 
@@ -46,9 +48,10 @@
 .Cart .form-cart{
     padding: 1rem;
     min-width: 50%;
-    max-width: 90%;
-    /* margin: 0 auto; */
-    border-bottom: 2px solid rgba(87, 87, 87, 0.26);
+    max-width: 60%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(87, 87, 87, 0.082);
+    padding-bottom: 1.5rem;
 }
 
 
@@ -59,8 +62,11 @@
     justify-content: space-between;
     align-items: stretch;
 }
+
+/* Left-Side Cart   Start */
+
 .Cart .img-1{
-    height: 200px;
+    height: 150px;
     margin-right: 1rem;
 }
 .Cart .text-group{
@@ -83,6 +89,10 @@
     align-items: center;
     
 }
+
+
+/* Quantity     Start */
+
 .Cart .button-group{
     position: relative;
     top: 45px;
@@ -116,9 +126,17 @@
     background-color: rgb(244, 245, 244);
     cursor: pointer;
   }
-  .Cart button[class*=btn]:hover{
-      background-color: #96969610;
+  .Cart .quantity button[className*=btn]:hover{
+      background-color: #4b4d4310;
   }
+.Cart .plus-btn:active{
+    box-shadow: 0 0 5px 0 rgba(12, 12, 12, 0.301);
+    border-radius: 2px 5px 5px 0;
+}
+.Cart .minus-btn:active{
+    box-shadow: 0 0 5px 0 rgba(12, 12, 12, 0.301);
+    border-radius: 5px 2px 0px 5;
+}
 .Cart .plus-btn{
     border: 2px solid rgba(0, 0, 0, 0.178);
     border-left: none;
@@ -133,6 +151,12 @@
     font-weight:500;
     font-size: 20px;
 }
+
+/* Quantity     END */
+/* Left-side Cart   END */
+
+/* Right-side Cart      Start*/
+
 .Cart .item-price{
     font-size: 19px;
     font-weight: 700;
@@ -160,3 +184,46 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/* Right-side Cart      END */
+
+/* Total :-   Start  */
+
+.Cart .total-amount{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+/* Total :-     END */
+
+
+/* Purchase button */
+
+.Cart .purchase-parent{
+    text-align: center;
+    border-top: 2px solid black;
+    
+    
+}
+
+.Cart .purchase-button{
+    margin-top: 3rem;
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 2rem;
+    background-color: #687368c3;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+.Cart .purchase-header{
+    font-weight:normal; 
+}
+
+/* Purchase button END */

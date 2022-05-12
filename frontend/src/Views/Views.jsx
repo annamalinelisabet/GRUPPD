@@ -9,6 +9,7 @@ const Views = () => {
     <Routes>
         <Route path='/' element={ <HomeView /> }/>
         <Route path='/products' element={ <ProductView />}/>
+        <Route path='/products/:id' element={ <div>ProductDetails</div> }/>
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
     </Routes>

@@ -43,11 +43,11 @@
 }
 
 .User .btn-danger:hover {
-    opacity: 80%;
+    background-color: #fb6e43;
 }
 
 .User .btn-danger:active {
-    opacity: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.393);
 }
 
 .User .order-text {
@@ -61,10 +61,6 @@
     background-color: var(--primary-color);
     display: inline-block;
     margin-top: 2rem;
-}
-
-.User input.hej {
-    display: inline-block;
 }
 
 

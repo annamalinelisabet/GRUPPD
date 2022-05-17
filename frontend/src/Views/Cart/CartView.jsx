@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import CartProduct from '../../components/ShoppingCart/CartProduct'
 import '../Cart/CartView.css'
 
@@ -6,7 +6,7 @@ import '../Cart/CartView.css'
 const CartView = () => {
 
   const { cart, totalAmount } = useSelector(state => state.cartReducer)
-const dispatch = useDispatch()
+// const dispatch = useDispatch()
 
 
 

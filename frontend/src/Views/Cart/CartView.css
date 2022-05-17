@@ -24,6 +24,11 @@
 
 /* Root     END */
 
+.tom-cart{
+    text-align: center;
+    padding: 2rem;
+}
+
 .Cart .container {
     position: absolute;
     top: 80px;
@@ -213,6 +218,8 @@
     text-align: center;
     border-top: 3px solid rgba(0, 0, 0, 0.295);
     border-top-style: groove;
+    
+    
     
 }
 .Cart .purchase-button:hover{

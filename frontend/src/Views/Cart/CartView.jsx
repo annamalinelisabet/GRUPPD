@@ -16,11 +16,11 @@ const dispatch = useDispatch()
     <div className='Cart'>
       <div className="container">
           <h2 className='header'>Kundvagn</h2>
+          
           { cart.map(product => (
           <CartProduct key={product._id} product={product} price={product.price} />
         )) }
-          <div className='total-amount'> Total Price:  { totalAmount } :-</div>
-          <small className=''>inkl. vat</small>
+          { cart.length ? <div className='total-amount'> Total Price:  { totalAmount } :-</div>: <h3 className='tom-cart'> Din kundvagn är tom...</h3>}
           <div className='purchase-parent'>
             <button className='purchase-button'>
               <h2 className='purchase-header'>Beställ</h2>

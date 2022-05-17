@@ -6,6 +6,8 @@ const CartProduct = ({ product }) => {
 
 const dispatch = useDispatch()
 
+
+
   return (
     <div className='cart-view'>
     <div className="cart-item">
@@ -14,7 +16,6 @@ const dispatch = useDispatch()
             <div className='head-quant'>
               <div className='header-p'>
                 <h1>{product.name}</h1>
- 
               </div>
                 <div className="quantity">
                   <button className="minus-btn" type="button" name="button" onClick={() => dispatch(decrement(product._id))} > <small className='minus-icon'>-</small> </button>
@@ -26,7 +27,7 @@ const dispatch = useDispatch()
 
           <div className='info-group'>
             <button className='remove-icon' type='button' onClick={() => dispatch(removeOne(product._id))}>X</button>
-            <div className="item-price"> {product.price}  :-</div>
+            <div className="item-price"> {product.price} kr/st </div>
           </div>
       </div>
   </div>

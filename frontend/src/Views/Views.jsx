@@ -3,6 +3,7 @@ import HomeView from './Home/HomeView'
 import ProductView from './Products/ProductView'
 import LoginView from './Login/LoginView'
 import CartView from './Cart/CartView'
+import RegisterView from './Register/RegisterView'
 
 const Views = () => {
   return (
@@ -12,6 +13,7 @@ const Views = () => {
         <Route path='/products/:id' element={ <div>ProductDetails</div> }/>
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
+        <Route path='/RegisterView' element={ <RegisterView /> }/>
     </Routes>
   )
 }

@@ -34,7 +34,9 @@
     width :80%;
     
    }
-   
+   .fa-arrow-left-long{
+    color: black;   
+   }
    .productDetail div{
        margin-top: 5%;
    }

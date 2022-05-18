@@ -44,7 +44,7 @@ export const ProductDetailsView = () => {
       <div className ='productDetail'>
         <div className='productDetail-background_image'>
             <Link to='/products' className='Back-Product-card'>
-               <i className="fa-solid fa-arrow-left-long"></i>
+               <i className="fa-solid fa-arrow-left-long fa-2x"></i>
             </Link >
             <img className='image-detail'src={eimg} alt="Sample"  />
          </div> 
@@ -54,7 +54,7 @@ export const ProductDetailsView = () => {
          <p className='pric'>{price}kr /st</p>
          <p className='content'>{description}</p>
         
-        <button className="btn btn-add-cart" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>Add to cart</small> </button>
+        <button className="product-card-btn" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>Add to cart</small> </button>
        </div>
       </div>       
     </div>

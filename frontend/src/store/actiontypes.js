@@ -9,7 +9,14 @@ const actiontypes = () => {
       add: 'ADD_TO_CART',
       decrement: 'DECREMENT',
       removeOne: 'REMOVE_ONE'
-  }
+  },
+    auth: {
+      loading: 'AUTH_LOADING',
+      authFailure: 'AUTH_FAILURE',
+      authSuccess: 'AUTH_SUCCESS',
+      logout:      'LOGOUT',
+      authAdmin:   'AUTH_ADMIN'
+    }
   }
 }
 

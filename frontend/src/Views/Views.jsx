@@ -14,6 +14,7 @@ const Views = () => {
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
         <Route path='/RegisterView' element={ <RegisterView /> }/>
+        {/* -- Lägg protected route inne i element på orderview -- */}
     </Routes>
   )
 }

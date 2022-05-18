@@ -15,8 +15,6 @@ const FormInput = (props) => {
         {...inputProps} 
         onChange={onChange}
         onBlur={handleFocus}
-        onFocus={() => 
-        inputProps.name === setFocused(true)}
         focused={focused.toString()}
          />
         <p>{errorMessage}</p>

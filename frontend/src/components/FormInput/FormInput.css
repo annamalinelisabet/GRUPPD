@@ -2,7 +2,7 @@
 .FormInput input {
     width: 100%;
     height: 45px;
-    margin-bottom: .7rem;
+    margin-bottom: .5rem;
     border: 1px solid #707070;
 }
 
@@ -21,8 +21,9 @@
     color: var(--danger-color);
     text-align: start;
     display: none;
+    margin-bottom: .6rem;
 }
 
-.FormInput input:invalid ~ p {
+.FormInput input:invalid[focused=true] ~ p {
     display: block;
 }

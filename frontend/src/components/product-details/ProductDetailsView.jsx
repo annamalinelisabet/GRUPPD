@@ -3,6 +3,7 @@ import axios from 'axios'
 import './ProductDetailsView.css'
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import {  addToCart, decrement, removeOne } from '../../store/actions/cartActions'
 import { selectedProduct, removeSelectedProduct } from "../../store/actions/productActions";
 import {Link } from 'react-router-dom'
 
@@ -52,7 +53,8 @@ export const ProductDetailsView = () => {
          <h1>{name}</h1>
          <p className='pric'>{price}kr /st</p>
          <p className='content'>{description}</p>
-        <button className='btn btn-add-cart'>Add to Cart</button>
+        
+        <button className="btn btn-add-cart" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>Add to cart</small> </button>
        </div>
       </div>       
     </div>

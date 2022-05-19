@@ -3,6 +3,7 @@ import HomeView from './Home/HomeView'
 import ProductView from './Products/ProductView'
 import LoginView from './Login/LoginView'
 import CartView from './Cart/CartView'
+import Conformation_view from './Conformation_view/Conformation_view'
 
 const Views = () => {
   return (
@@ -11,6 +12,7 @@ const Views = () => {
         <Route path='/products' element={ <ProductView />}/>
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
+        <Route path='/conformation' element={ <Conformation_view /> }/>
     </Routes>
   )
 }

@@ -4,6 +4,7 @@ import {ProductDetailsView } from '../components/product-details/ProductDetailsV
 import ProductView from './Products/ProductView'
 import LoginView from './Login/LoginView'
 import CartView from './Cart/CartView'
+import Conformation_view from './Conformation_view/Conformation_view'
 import RegisterView from './Register/RegisterView'
 
 const Views = () => {
@@ -16,6 +17,7 @@ const Views = () => {
         <Route path='/cart' element={ <CartView /> }/>
         <Route path='/RegisterView' element={ <RegisterView /> }/>
         {/* -- Lägg protected route inne i element på orderview -- */}
+        <Route path='/conformation' element={ <Conformation_view /> }/>
     </Routes>
   )
 }

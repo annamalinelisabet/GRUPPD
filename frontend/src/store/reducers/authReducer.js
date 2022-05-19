@@ -5,7 +5,7 @@ const initState = {
     error: null,
     loading: false, 
     userId: null,
-    admin: null
+    admin: false
 }
 
 const authReducer = (state = initState, action) => {
@@ -30,7 +30,8 @@ const authReducer = (state = initState, action) => {
                 error: null,
                 loading: false,
                 token: action.payload,
-                userId: action.userId
+                userId: action.userId,
+                admin: action.admin
             }
         
         case actiontypes().auth.logout:

@@ -22,13 +22,14 @@ export const registerUser = (user) => {
             dispatch(loading())
             axios.post('http://localhost:5050/api/users/login', user)
             .then (res => {
-            dispatch(authSuccess(res.data.token, res.data.user._id))
+            dispatch(authSuccess(res.data.token, res.data.user._id, res.data.user.admin))
+        
         })
         .catch(err => dispatch(authFailure(err.message)))
     }
 }
 
-export const logoutUser = (user) => {
+export const logoutUser = () => {
     
     return {
         type: actiontypes().auth.logout
@@ -57,6 +58,9 @@ export const checkUser = () => {
 
 }
 
+
+
+
 const loading = () => {
     return {
         type: actiontypes().auth.loading
@@ -70,10 +74,11 @@ const authFailure = (err) => {
     }
 }
 
-const authSuccess = (token, userId )=> {
+const authSuccess = (token, userId, admin )=> {
     return {
         type: actiontypes().auth.authSuccess,
         payload: token,
-        userId: userId
+        userId: userId,
+        admin: admin
     }
 }

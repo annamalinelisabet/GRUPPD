@@ -51,10 +51,10 @@ export const ProductDetailsView = () => {
         
         <div className='product-detail-content'>
          <h1>{name}</h1>
-         <p className='pric'>{price}kr /st</p>
+         <p className='pric'>{price} kr</p>
          <p className='content'>{description}</p>
         
-        <button className="product-card-btn" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>Add to cart</small> </button>
+        <button className="product-card-btn" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>LÄGG TILL I KUNDVAGN</small> </button>
        </div>
       </div>       
     </div>

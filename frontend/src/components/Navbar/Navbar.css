@@ -17,6 +17,22 @@
     width: 200px;
 }
 
+.navbar-cart-notification{
+    
+    
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  padding: 1px 1px;
+  font-size: 20px; 
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 10x;
+  top:20px
+    
+}
 .Navbar .products-link {
     color: var(--secondary-color);
     text-transform: uppercase;

@@ -1,1 +1,32 @@
 /* SCOPA CSS:N */
+/* @import '../../App.css'; */
+.border {
+  border: 1px solid red;
+}
+.product-view {
+  /* min-height: 100vh; */
+}
+.product-view-container {
+  width: 80%;
+  margin: auto;
+  min-height: calc(100vh - 108px - 5rem); 
+  padding-top: 10rem;
+}
+.product-view-header {
+  font-family: 'Playfair Display', serif;
+}
+.product-view-text {
+  color: #585858;
+  margin-top: .5rem;
+}
+.product-view-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 4rem;
+}
+.product-view-footer {
+   margin-top: 5rem;
+}
+
+

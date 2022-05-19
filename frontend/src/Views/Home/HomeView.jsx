@@ -11,7 +11,7 @@ const HomeView = () => {
           <div className='hero-card'>
             <h1>DEJSA</h1>
             <p>Vårt nya tillskott Dejsa ger dig mjukt, dämpat ljus som skapar en mysig atmosfär i rummet. </p>
-            <Link to="/" className='btn btn-hero'>Ta en titt</Link>
+            <Link to="/products/6273988fa5613135d0e579c7" className='btn btn-hero'>Ta en titt</Link>
           </div>
         </div>
         <div className='link-container'>

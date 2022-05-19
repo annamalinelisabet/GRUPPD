@@ -26,8 +26,11 @@ const Navbar = () => {
           ? <Link onClick={() => dispatch(logoutUser())} to="/login"><button className='nav-btn'>Logga ut</button></Link>
           : <Link to="/login"><button className='nav-btn'>LOGGA IN</button></Link>
           }
-          <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i> 
-          <span className='navbar-cart-notificaation'><sup>{totalQuantity >= 1 && totalQuantity}</sup></span></Link>
+          <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i>
+          { totalQuantity >= 1 && 
+          <span className='navbar-cart-notification'><sup>{totalQuantity}</sup></span>
+          } 
+          </Link>
         </div>
       </div>
     </nav>

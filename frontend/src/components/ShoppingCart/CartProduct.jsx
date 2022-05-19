@@ -19,7 +19,7 @@ const dispatch = useDispatch()
               </div>
                 <div className="quantity">
                   <button className="minus-btn" type="button" name="button" onClick={() => dispatch(decrement(product._id))} > <small className='minus-icon'>-</small> </button>
-                    <input type="text" name="name" value={product.quantity} ></input>
+                    <input type="text" name="name" readOnly value={product.quantity} ></input>
                   <button className="plus-btn" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>+</small> </button>
                 </div>
             </div>

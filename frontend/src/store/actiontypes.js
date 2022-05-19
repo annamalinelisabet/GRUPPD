@@ -4,6 +4,7 @@ const actiontypes = () => {
       getProductList: 'GET_PRODUCT_LIST',
       getProductListSuccess: 'GET_PRODUCT_LIST_SUCCESS',
       getProductListFailed: 'GET_PRODUCT_LIST_FAILED'
+      
     },
     cart: {
       add: 'ADD_TO_CART',
@@ -19,5 +20,7 @@ const actiontypes = () => {
     }
   }
 }
+
+
 
 export default actiontypes

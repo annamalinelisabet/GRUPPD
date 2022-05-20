@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-
-
-
 /* Root */
 * {
     margin: 0;
@@ -248,4 +245,19 @@
     font-weight:normal; 
 }
 
+.Cart .link-title {
+    margin-block: 1rem;
+    color: var(--primary-color);
+}
+.Cart .link {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.Cart .link-title .link:hover{
+    color: var(--secondary-color);
+}
+
+.Cart .link-title .link:active{
+    color: var(--secondary-color);
+}
 /* Purchase button END */

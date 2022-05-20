@@ -10,11 +10,6 @@ const { cart, totalAmount } = useSelector(state => state.cartReducer)
 const loggedIn = useSelector(state => state.auth.token)
 const dispatch = useDispatch()
 
-
-
-
-
-
   return (
     <div className='Cart'>
       <div className="container">
@@ -27,7 +22,7 @@ const dispatch = useDispatch()
           <div className='purchase-parent'>
             { loggedIn 
               ? <button className='purchase-button'><h2 className='purchase-header'>Beställ</h2></button>
-              : <h2>Du måste <Link to="/login">logga in</Link> för att lägga en beställning</h2>
+              : <h2 className='link-title'>Du måste <Link to="/login" className='link'>logga in</Link> för att lägga en beställning</h2>
             }
           </div>
       </div>

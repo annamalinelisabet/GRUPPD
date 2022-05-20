@@ -10,8 +10,12 @@
 }
 .Register .form-control {
     background-color: #fff;
-    padding: 3rem;
+    padding: 1.3rem 3rem 3rem 3rem;
     width: 514.4px;
+}
+
+.Register .error {
+    color: var(--danger-color);
 }
 
 /* -- btn --- */

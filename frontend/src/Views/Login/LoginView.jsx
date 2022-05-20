@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import FormInput from '../../components/FormInput/FormInput'
 import { checkUser, loginUser } from '../../store/actions/authActions'
 import { useDispatch, useSelector  } from 'react-redux'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const LoginView = () => {
@@ -37,10 +37,11 @@ const LoginView = () => {
 
   const loading = useSelector(state => state.auth.loading)
 
+  const error = useSelector(state => state.auth.error)
+
   const navigate = useNavigate()
 
   const user = useSelector(state => state.auth.token)  
-  const { state } = useLocation()
 
   const onChange = e => {
     setValues(state => ({
@@ -56,8 +57,7 @@ const LoginView = () => {
 
   useEffect(() => {
     if(user) {
-      try {navigate(state.from)}
-      catch {navigate("/products")}
+    navigate("/")
     }
   }, [user, navigate])
 
@@ -80,6 +80,7 @@ const LoginView = () => {
               <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/> 
             ))}
           </div>
+          <p className='error'>{ error && 'Du har angett fel e-postadress eller lösenord'}</p>
           <button className='btn btn-dark'>{loading ? 'Loggar in' : 'Logga in'}</button>
           <Link to="/RegisterView"><button className='btn btn-light'>Registrera</button></Link>
         </form>

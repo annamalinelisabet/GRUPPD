@@ -12,7 +12,9 @@
     background-color: #fff;
     padding: 3rem;
 }
-
+.LoginView .error {
+    color: var(--danger-color);
+}
 /* -- btn --- */
 .LoginView .btn {
     border: none;

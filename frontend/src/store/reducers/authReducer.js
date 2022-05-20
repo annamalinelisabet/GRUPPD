@@ -20,7 +20,8 @@ const authReducer = (state = initState, action) => {
         case actiontypes().auth.authFailure:
             return {
                 ...state,
-                error: action.payload
+                error: action.payload,
+                loading: false
             }
 
         case actiontypes().auth.authSuccess:

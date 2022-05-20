@@ -5,6 +5,7 @@ import { useDispatch, useSelector  } from 'react-redux'
 import { registerUser } from '../../store/actions/authActions'
 import { useNavigate } from 'react-router-dom'
 import FormInput from '../../components/FormInput/FormInput'
+// import { render } from 'react-dom'
 
 const RegisterView = () => {
 
@@ -66,6 +67,8 @@ const RegisterView = () => {
 
   const loading = useSelector(state => state.auth.loading)
 
+  const error = useSelector(state => state.auth.error)
+
   const user = useSelector(state => state.auth.token)  
 
   
@@ -76,10 +79,10 @@ const RegisterView = () => {
     }))
   }
 
+
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(registerUser(values))
-
   }
 
   useEffect(() => {
@@ -88,23 +91,24 @@ const RegisterView = () => {
     }
   }, [user, navigate])
 
-  return (
-    <div className='Register'>      
-    <div className='register-container'>
-      <form className='form-control' onSubmit={handleSubmit}>
+
+    return (
+      <div className='Register'>      
+      <div className='register-container'>
+      <form className='form-control' onSubmit={ handleSubmit }>
         <Link to="/Login"><i className="fa-solid fa-arrow-left"></i></Link>
         <h1>Registrera</h1>
         <p className='sm-text'>Fyll i informationen nedan för att registrera ett konto</p>
         <div className='input-group'>
         {inputs.map((input) => (
-              <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/> 
-            ))}
+          <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/> 
+          ))}
         </div>
         <button className='btn btn-dark'>{loading ? 'Registrerar' : 'Registrera'}</button>
+        <p className='error'>{ error && 'E-postadressen är upptagen. Prova en annan'}</p>
       </form>
     </div>
   </div>
-  )
-}
-
+   )
+  }
 export default RegisterView

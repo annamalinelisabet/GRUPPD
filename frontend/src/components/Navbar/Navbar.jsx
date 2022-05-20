@@ -4,14 +4,12 @@ import logo  from '../../assets/logo.svg'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 // import {  addToCart, decrement, removeOne } from '../../store/actions/cartActions'
-import { logoutUser } from '../../store/actions/authActions'
 
 const Navbar = () => {
 
-  const dispatch = useDispatch()
   const totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
   const isAuth = useSelector(state => state.auth.token)
-
+  const isAuthAdmin = useSelector(state => state.auth.admin)
  
   return (
     <nav className='Navbar'>
@@ -22,8 +20,7 @@ const Navbar = () => {
         </div>
         <div className='d-flex user-links'>
           { isAuth
-          // ? <Link to="/UserView"><button className='nav-btn'>MINA SIDOR</button></Link>
-          ? <Link onClick={() => dispatch(logoutUser())} to="/login"><button className='nav-btn'>Logga ut</button></Link>
+          ? <Link to={isAuthAdmin ? '/admin' : '/user'}><button className='nav-btn'>{isAuthAdmin ? 'ADMIN' : 'MINA'} SIDOR</button></Link>
           : <Link to="/login"><button className='nav-btn'>LOGGA IN</button></Link>
           }
           <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i>

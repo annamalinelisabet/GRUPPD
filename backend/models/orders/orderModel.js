@@ -7,8 +7,8 @@ exports.newOrder = (req, res) => {
 
     Order.create({
         userId:         req.userData.id,
-        products:       req.body.products,
-        totalPrice:     req.body.totalPrice
+        products:       req.body.cart,
+        totalPrice:     req.body.totalAmount
     })
     .then(order => {
         res.status(201).json({

@@ -66,7 +66,6 @@ const LoginView = () => {
   }, [dispatch])
 
 
-  console.log(values);
   return (
 
     <div className='LoginView'>

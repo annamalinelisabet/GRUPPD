@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 const Navbar = () => {
 
   const totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+  const userId = useSelector(state => state.auth.userId)
   const isAuth = useSelector(state => state.auth.token)
   const isAuthAdmin = useSelector(state => state.auth.admin)
  
@@ -20,7 +21,7 @@ const Navbar = () => {
         </div>
         <div className='d-flex user-links'>
           { isAuth
-          ? <Link to={isAuthAdmin ? '/admin' : '/user'}><button className='nav-btn'>{isAuthAdmin ? 'ADMIN' : 'MINA'} SIDOR</button></Link>
+          ? <Link to={isAuthAdmin ? '/admin' : '/user/' + userId}><button className='nav-btn'>{isAuthAdmin ? 'ADMIN' : 'MINA'} SIDOR</button></Link>
           : <Link to="/login"><button className='nav-btn'>LOGGA IN</button></Link>
           }
           <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i>

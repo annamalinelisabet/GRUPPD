@@ -40,16 +40,16 @@ export const checkUser = () => {
     
     return dispatch => {
         let token = localStorage.getItem('token')
-
-        if(token) {
-            dispatch(authSuccess(token))
-        } else {
-            localStorage.removeItem('token')
-        }
+        let userId = localStorage.getItem('userId')
+        // if(token) {
+        //     dispatch(authSuccess(token))
+        // } else {
+        //     localStorage.removeItem('token')
+        // }
         
         if(token) {
             if(jwt_decode(token).exp * 1000 > Date.now()) {
-                dispatch(authSuccess(token))
+                dispatch(authSuccess(token, userId))
             } else {
                 localStorage.removeItem('token')
             }

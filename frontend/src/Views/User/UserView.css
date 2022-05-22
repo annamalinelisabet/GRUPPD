@@ -63,6 +63,10 @@
     margin-top: 2rem;
 }
 
+.User .nothing-to-show {
+    color: #504F54;
+}
+
 
 @media (min-width: 550px) {
     .User .header-text {

@@ -26,6 +26,7 @@ const authReducer = (state = initState, action) => {
 
         case actiontypes().auth.authSuccess:
             localStorage.setItem('token', action.payload)
+            localStorage.setItem('userId', action.userId)
             return {
                 ...state,
                 error: null,
@@ -37,11 +38,10 @@ const authReducer = (state = initState, action) => {
         
         case actiontypes().auth.logout:
             localStorage.removeItem('token')
+            localStorage.removeItem('userId')
             return {
                 ...initState
             }
-
-            // -- För att logga ut sen måste Malin hämta logoutUser, lägga till dispatch och funktionen i MINA SIDOR --
 
         default: 
         return state

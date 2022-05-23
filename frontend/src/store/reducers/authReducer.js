@@ -27,6 +27,7 @@ const authReducer = (state = initState, action) => {
         case actiontypes().auth.authSuccess:
             localStorage.setItem('token', action.payload)
             localStorage.setItem('userId', action.userId)
+            localStorage.setItem('admin', action.admin)
             return {
                 ...state,
                 error: null,
@@ -39,6 +40,7 @@ const authReducer = (state = initState, action) => {
         case actiontypes().auth.logout:
             localStorage.removeItem('token')
             localStorage.removeItem('userId')
+            localStorage.removeItem('admin')
             return {
                 ...initState
             }

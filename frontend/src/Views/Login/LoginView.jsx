@@ -81,7 +81,7 @@ const LoginView = () => {
           </div>
           <p className='error'>{ error && 'Du har angett fel e-postadress eller lösenord'}</p>
           <button className='btn btn-dark'>{loading ? 'Loggar in' : 'Logga in'}</button>
-          <Link to="/RegisterView"><button className='btn btn-light'>Registrera</button></Link>
+          <Link to="/register"><button className='btn btn-light'>Registrera</button></Link>
         </form>
       </div>
     </div>

@@ -3,9 +3,9 @@
 .border {
   border: 1px solid red;
 }
-.product-view {
-  /* min-height: 100vh; */
-}
+/* .product-view {
+  min-height: 100vh;
+} */
 .product-view-container {
   width: 80%;
   margin: auto;

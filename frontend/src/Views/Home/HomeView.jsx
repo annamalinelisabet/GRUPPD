@@ -15,7 +15,7 @@ const HomeView = () => {
           </div>
         </div>
         <div className='link-container'>
-          <Link to="/" className='title'>Registera dig som ny kund idag</Link>
+          <Link to="/register" className='title'>Registera dig som ny kund idag</Link>
           <p>För att få personliga erbjudanden och rabatter</p>
         </div>
         <div className='product-information'>

@@ -52,6 +52,16 @@ const cartReducer = (state = initState, action) => {
 
             }
         }
+
+        case actiontypes().cart.clearCart: {
+            return {
+                ...state,
+                cart: [],
+                totalAmount: 0,
+                totalQuantity: 0
+            }
+        }
+        
         default:
             return state
         }

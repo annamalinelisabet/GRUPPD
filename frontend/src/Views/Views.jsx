@@ -8,6 +8,7 @@ import ConformationView from './Conformation_view/Conformation_view'
 import RegisterView from './Register/RegisterView'
 import UserView from './User/UserView'
 import AdminView from './Admin/AdminView'
+import { ProtectedRoute } from '../routes/ProtectedRoute'
 
 const Views = () => {
   return (
@@ -17,11 +18,10 @@ const Views = () => {
         <Route path='/products/:id' element={ <ProductDetailsView/> }/>
         <Route path='/login' element={ <LoginView /> }/>
         <Route path='/cart' element={ <CartView /> }/>
-        <Route path='/confirmation' element={ <ConformationView /> }/>
-        <Route path='/RegisterView' element={ <RegisterView /> }/>
-        <Route path='/user/:userId' element={ <UserView /> }/>
-        <Route path='/admin' element={ <AdminView /> }/>
-        {/* -- Lägg protected route inne i element på orderview -- */}
+        <Route path='/confirmation' element={ <ProtectedRoute> <ConformationView /> </ProtectedRoute> }/>
+        <Route path='/register' element={ <RegisterView /> }/>
+        <Route path='/user/:userId' element={ <ProtectedRoute> <UserView /> </ProtectedRoute> }/>
+        <Route path='/admin' element={ <ProtectedRoute> <AdminView /> </ProtectedRoute>  }/>
     </Routes>
   )
 }

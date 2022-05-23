@@ -1,6 +1,6 @@
 .Order {
     border: 1px solid #85838c;
-    padding: .8rem 2rem;
+    padding: .8rem 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -8,43 +8,36 @@
     color: #504F54;
 }
 
-.square {
-    display: block;
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 22px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.square input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 23px;
-    width: 23px;
-    border-radius: 4px;
-    background-color: #eee;
-}
-
-.Order .checkbox {
+.Order .btn-done {
     display: none;
-    margin-right: 1rem;
 }
 
-.Order .admin-box {
+.Order .admin-btn {
     display: inline-block;
+    margin-right: 1rem;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: white;
+    color: white;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.Order .admin-btn:hover {
+    color: var(--primary-color);
+}
+
+.Order .admin-btn:active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.Order .order-item-list {
+    height: 3rem;
+    width: 120px;
+    overflow-y: auto;
 }
 
 .Order .price {
@@ -55,4 +48,9 @@
 .Order .date {
     font-size: .7rem;
     color: #504F54;
+}
+
+.Order .order-product-text {
+    font-size: .8rem;
+    margin-bottom: .2rem;
 }

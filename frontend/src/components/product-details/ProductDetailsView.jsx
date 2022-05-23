@@ -12,6 +12,7 @@ export const ProductDetailsView = () => {
  
    const product_id =  useParams();
    let product = useSelector((state) => state.product);
+   const admin = useSelector(state => state.auth.admin)
   //  console.log(product)
    const {  name, price, description , eimg} = product;  
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ export const ProductDetailsView = () => {
          <p className='pric'>{price} kr</p>
          <p className='content'>{description}</p>
         
-        <button className="product-card-btn" type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>LÄGG TILL I KUNDVAGN</small> </button>
+        <button className={admin ? 'product-card-btn hidden' : 'product-card-btn'} type="button" name="button" onClick={() => dispatch(addToCart(product))}> <small className='plus-icon'>LÄGG TILL I KUNDVAGN</small> </button>
        </div>
       </div>       
     </div>

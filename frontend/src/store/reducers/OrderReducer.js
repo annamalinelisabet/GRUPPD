@@ -36,6 +36,27 @@ const OrdersReducer = (state = initState, action) => {
                 error: action.payload
             }
 
+        case actiontypes().order.updateOrder:
+            return {
+                ...state,
+                loading: true,
+            }
+
+        case actiontypes().order.updateOrderSuccess:     
+            const complete = state.data.find(order => order._id === action.payload)
+            complete.completed = true   
+            return {
+                ...state,
+                loading: false,
+                error: null
+            }
+        case actiontypes().order.updateOrderFailure:
+            return {
+                ...state,
+                loading: false,
+                error: action.payload
+            }
+
         default:
             return state
     }

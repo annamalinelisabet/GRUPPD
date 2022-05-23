@@ -78,13 +78,13 @@ exports.getAllOrdersFromUsers = (req, res) => {
             })
         }
 
-        if(!orders) {
-            return res.status(404).json({
-                statusCode: 404,
-                status: false,
-                message: 'This user does not exist...'
-            })
-        }
+        // if(!orders) {
+        //     return res.status(404).json({
+        //         statusCode: 404,
+        //         status: false,
+        //         message: 'This user does not exist...'
+        //     })
+        // }
 
         res.status(200).json(orders)
 

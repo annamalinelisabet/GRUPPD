@@ -230,7 +230,7 @@
 }
 .Cart .purchase-button{
     width:  30% ;
-    margin-top: 2rem;
+    margin-block: 2rem;
     background-color: var(--secondary-color);
     border-radius: 100vh;
     padding: .4rem 1.2rem;
@@ -240,6 +240,10 @@
     border: 0;
     cursor: pointer;
     transition: 0.2s ease;
+}
+
+.Cart .purchase-button.hidden {
+    display: none;
 }
 .Cart .purchase-header{
     font-weight:normal; 

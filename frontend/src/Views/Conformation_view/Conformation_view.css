@@ -1,2 +1,7 @@
 /* .Conformation -- ska du ha före varje annan klass du sätter,
 tex. .Conformation .link {} */
+
+.Conformation h2 {
+    text-align: center;
+    margin-top: 10rem;
+}

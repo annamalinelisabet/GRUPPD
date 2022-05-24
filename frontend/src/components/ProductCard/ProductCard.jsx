@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../../store/actions/cartActions'
 import { Link } from 'react-router-dom'
 import './ProductCard.css'
-// import image from '../../assets/Image-2.png'
 
 const ProductCard = ({product}) => {
   
@@ -28,7 +27,7 @@ const ProductCard = ({product}) => {
         </p>
       </div>
       
-      <button onClick={() => dispatch(addToCart(product))} className={admin ? 'product-card-btn hidden' : 'product-card-btn'}>Lägg i kundvagn</button>
+      <button onClick={() => dispatch(addToCart(product))} className={admin ? 'product-card-btn hidden' : 'product-card-btn'}>LÄGG I KUNDVAGN</button>
 
     </div>
   )

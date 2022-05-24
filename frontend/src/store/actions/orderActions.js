@@ -14,7 +14,6 @@ export const getOrdersFromUser = userId => {
                     'Authorization': 'Bearer ' + token
                 }
             })
-            // console.log(res.data)
             if(res.status === 200) {
                 dispatch(getOrdersSuccess(res.data))
             } else {
@@ -66,7 +65,6 @@ export const updateOrderToComplete = order => {
                 }
             })
             if(res.status === 200) {
-                console.log(res.data.order._id)
                 dispatch(updateOrderSuccess(res.data.order._id))
             } else {
                 throw new Error('Could not update the data...')

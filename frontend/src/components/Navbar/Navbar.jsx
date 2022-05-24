@@ -2,8 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import logo  from '../../assets/logo.svg'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-// import {  addToCart, decrement, removeOne } from '../../store/actions/cartActions'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
 
